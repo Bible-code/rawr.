@@ -10,6 +10,6 @@ const client = new Client();
   client.prefix = ";";
   await registerCommands(client, '../commands');
   await registerEvents(client, '../events');
-  await client.login('ODU3MTYzMTk5MTA3MDM5MjMy.YNLlbw.hpzDDDmCezZ0wr0tlk-hXgnKy0I');
+  await client.login('ODU3MTYzMTk5MTA3MDM5MjMy.YNLlbw.oEM8pn4AKcMnRZ62_M3CztO48m4');
 })();
 
