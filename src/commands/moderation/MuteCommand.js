@@ -21,7 +21,7 @@ module.exports = class MuteCommand extends BaseCommand {
       .addField(`Duration ${time}`, `Reason: ${reason}`)
       .setTimestamp();
 
-    if (!args[0]) return message.channel.send('Who do you want to mute, and for how long? \` ;mute @member time reason\`');
+    if (!args[0]) return message.channel.send('Who do you want to mute, and for how long? \` rawr mute @member time reason\`');
     if (!mentionedMember) return message.channel.send('The member you mentioned is not in the server :/');
     if (!reason) reason = 'No reason provided';
 

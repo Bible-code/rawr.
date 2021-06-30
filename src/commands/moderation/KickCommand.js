@@ -20,7 +20,7 @@ module.exports = class KickCommand extends BaseCommand {
     .setFooter(client.user.tag, client.user.displayAvatarURL())
 
     // -kick @user reason
-    if(!args[0]) return message.channel.send('Who would you like me to kick? \`;kick @user reason\`');
+    if(!args[0]) return message.channel.send('Who would you like me to kick? \`rawr kick @user reason\`');
     if (!mentionedMember.kickable) return message.channel.send('Unable to kick this member.')
     if (!mentionedMember) return message.channel.send("The member you mentioned is not in the server :/");
     try {

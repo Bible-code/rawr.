@@ -8,8 +8,8 @@ module.exports = class ReadyEvent extends BaseEvent {
     console.log(client.user.tag + ' has logged in.');
     client.user.setPresence({
       activity: {
-        name: 'xavier try to get an egirl',
-        type: "WATCHING"
+        name: 'a game',
+        type: "PLAYING"
       },
       status: 'dnd'
     })

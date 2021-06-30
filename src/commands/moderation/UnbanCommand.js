@@ -14,7 +14,7 @@ module.exports = class UnbanCommand extends BaseCommand {
   let userID = args[0];
 
   if (!reason) reason = 'No reason provided';
-  if (!args[0]) return message.channel.send('Who do you want to unban? \`;unban ID reason\`')
+  if (!args[0]) return message.channel.send('Who do you want to unban? \`rawr unban ID reason\`')
   if (!isNaN(args[0])) return message.channel.send('The ID stated is invalid. \`rawr unban ID reason\`')
 
   message.guild.fetchBans().then(async bans => {

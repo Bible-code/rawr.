@@ -8,7 +8,7 @@ module.exports = class WipeCommand extends BaseCommand {
  async run(client, message, args) {
   if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel('You cannot use this command.');
   if (!message.guild.me.hasPermission("MANAGE_MESSAGES")) return message.channel.send('I do not have the \`MANAGE_MESSAGES\` permission.');
-  if (!args[0]) return message.channel.send('How many messages would you like to clear? \`;clear number\`');
+  if (!args[0]) return message.channel.send('How many messages would you like to clear? \`rawr clear number\`');
   const amountToDelete = Number(args[0], 10);
   
   if (isNaN(amountToDelete)) return message.channel.send('Please state a valid number.');
